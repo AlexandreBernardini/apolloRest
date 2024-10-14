@@ -8,19 +8,19 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.113",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.1",
     "express": "^4.21.1",
     "graphql": "^16.9.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "type": "module",
   "scripts": {
+    "compile": "tsc",
     "start": "react-scripts start",
+    "grapql": "npm run compile && ts-node dist/components/graphql.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,5 +42,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
   }
 }
